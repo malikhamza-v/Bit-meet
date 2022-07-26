@@ -14,6 +14,7 @@ const peerServer = ExpressPeerServer(server, {
   debug: true,
 });
 
+app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 // we use this to tell the server that my javascript file is in public folder.
