@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Instant Room</title>
+    <title>Bit Meet</title>
     <link rel="stylesheet" href="style.css" />
     <script src="/socket.io/socket.io.js"></script>
     <script
@@ -20,7 +20,7 @@
   </head>
   <body>
     <header class="navbar">
-      <h1>The Instant Room</h1>
+      <div id="container"></div>
 
       <i class="fa-brands fa-rocketchat icon"></i>
     </header>
@@ -39,8 +39,11 @@
           <ul></ul>
         </div>
         <div class="chat__input">
-          <input type="text" placeholder="Type message" class="input__feild" />
-          <i class="fa-solid fa-paper-plane"></i>
+          <input
+            type="text"
+            placeholder="Type message and press enter"
+            class="input__feild"
+          />
         </div>
       </div>
 
@@ -56,7 +59,7 @@
           </div>
         </div>
         <div class="control__middle">
-          <button>Invite a friend</button>
+          <button onclick="copyurl()">Invite a friend</button>
         </div>
         <div class="control__right">
           <span>Leave meeting</span>
