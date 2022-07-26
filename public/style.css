@@ -76,9 +76,12 @@ body {
   transition: all 0.4 ease;
   position: relative;
 }
-/* .main__right {
-  overflow: scroll;
-} */
+@media only screen and (max-width: 915px) {
+  .main__right {
+    position: absolute;
+    width: 70vw;
+  }
+}
 .chat-open .main__right {
   display: initial;
   animation-name: animleft;
