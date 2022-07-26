@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/:room", (req, res) => {
-  res.render("room", { roomid: req.params.room });
+  res.render("room.ejs", { roomid: req.params.room });
 });
 
 // Intializing socket.io making the connection ready.
